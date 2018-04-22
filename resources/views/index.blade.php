@@ -31,6 +31,9 @@
 
               <div class="spacer">
 
+                  <h1 class="question-text">... is Bitcoin over 9000?</h1>
+
+
                   <h1 id="welcome-text" class="welcome-text">Nope</h1>
 
                   <h1 id="current-price" class="current-price-below"></h1>

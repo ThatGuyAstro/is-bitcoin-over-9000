@@ -38,6 +38,9 @@
 
                   <h1 id="current-price" class="current-price-below"></h1>
 
+                  <h1 class="description-text">Price is updated every 9001 milliseconds (9.1 seconds), sound clip will play when price is over $9000.</h1>
+
+
               </div>
 
           </div>

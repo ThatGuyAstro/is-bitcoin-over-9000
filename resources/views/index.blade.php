@@ -67,17 +67,25 @@
     <!-- And this is where the magic happens -->
     <script>
 
-        function main() {1
+        function main() {
+
+            var played = false;
+
 
             $.getJSON( "https://api.coindesk.com/v1/bpi/currentprice.json", function( data ) {
 
-                var played = false;
 
                 var price = data.bpi.USD.rate;
 
+                //This is a hack because javascript isn't too friednly to decimal places that exceed 2 digits
+                var num = parseFloat(data.bpi.USD.rate);
+                var fixed = num.toFixed(num, 0) * 1000 + 1;
+
+                console.log(fixed);
+
                 $('#current-price').text("$" + price);
 
-                if(price > 9000) {
+                if(fixed > 9000) {
 
                     //It's over 9000!!!!!!
                     document.title = "IT'S OVER 9000!!!!!!!!!!!!";

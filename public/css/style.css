@@ -1,0 +1,48 @@
+.welcome-text {
+
+
+
+}
+
+.current-price-below {
+
+    color: red;
+
+}
+
+.current-price-above {
+
+    color: green;
+
+}
+
+.footer-text {
+
+    display: inline;
+    font-size: 12px;
+    color: white;
+
+}
+
+.footer-right-space {
+
+    padding-right: 15px;
+
+}
+
+.container {
+
+    padding-top: 125px;
+
+}
+
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #FF9900;
+    color: white;
+    text-align: center;
+}
